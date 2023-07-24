@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#333333"
     tools:context=".HalamanCatatan">
 
     <LinearLayout
@@ -25,8 +26,9 @@
 
         <TextView
             android:id="@+id/tvJudul"
-            android:layout_width="330dp"
+            android:layout_width="360dp"
             android:layout_height="60dp"
+            android:background="@color/white"
             android:fontFamily="@font/poppins"
             android:gravity="center_vertical"
             android:text="Catatan Harian"
