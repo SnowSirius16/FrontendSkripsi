@@ -12,6 +12,9 @@
         android:theme="@style/Theme.FrontendSkripsi"
         tools:targetApi="31">
         <activity
+            android:name=".catatanTertambah"
+            android:exported="false" />
+        <activity
             android:name=".HalamanCatatan"
             android:exported="false" />
         <activity

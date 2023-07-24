@@ -1,6 +1,7 @@
 package com.example.frontendskripsi;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,6 +56,14 @@ public class MenuAdapter extends RecyclerView.Adapter {
         vh.tvStand.setText(m.stand);
         vh.tvHarga.setText(m.harga);
         //vh.ivMenu.setImageDrawable(m.gambarMakanan());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(view.getContext(), catatanTertambah.class);
+                view.getContext().startActivity(it);
+            }
+        });
 
     }
 

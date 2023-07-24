@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#333333"
-    tools:context=".HalamanCatatan">
+    tools:context=".catatanTertambah">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -161,13 +157,13 @@
 
     <ImageButton
         android:id="@+id/ibSarapan"
-        android:layout_width="341dp"
-        android:layout_height="wrap_content"
+        android:layout_width="338dp"
+        android:layout_height="246dp"
         android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:srcCompat="@drawable/makanan_tertambah" />
+        app:srcCompat="@drawable/sarapan" />
 
     <ImageButton
         android:id="@+id/ibSnackPagi"
@@ -189,6 +185,4 @@
         app:layout_constraintTop_toBottomOf="@+id/ibSnackPagi"
         app:srcCompat="@drawable/makan_siang" />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
