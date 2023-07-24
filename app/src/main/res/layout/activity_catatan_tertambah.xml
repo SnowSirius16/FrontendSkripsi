@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#333333"
@@ -17,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/ibKembali"
+            android:id="@+id/ibLainnya"
             android:layout_width="90dp"
             android:layout_height="60dp"
             android:layout_weight="1"
@@ -46,7 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:srcCompat="@drawable/Kalender" />
+        app:srcCompat="@drawable/kalori_kalender" />
 
     <TextView
         android:id="@+id/tvJmlKalori"
@@ -163,7 +168,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:srcCompat="@drawable/sarapan" />
+        app:srcCompat="@drawable/makanan_tertambah" />
 
     <ImageButton
         android:id="@+id/ibSnackPagi"
@@ -186,3 +191,4 @@
         app:srcCompat="@drawable/makan_siang" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
